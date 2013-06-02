@@ -1,0 +1,27 @@
+<archetype-descriptor name="basic">
+  <requiredProperties>
+    <requiredProperty key="kotlin.version">
+      <defaultValue>0.5.429</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/kotlin</directory>
+      <includes>
+        <include>**/*.kt</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" packaged="true">
+      <directory>src/main/resources</directory>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/test/kotlin</directory>
+      <includes>
+        <include>**/*.kt</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" packaged="true">
+      <directory>src/test/resources</directory>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>
